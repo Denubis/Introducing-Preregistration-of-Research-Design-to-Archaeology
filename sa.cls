@@ -220,7 +220,7 @@
   \Hyperauthor{\@Plainauthor}
   \Keywords{---!!!---at least one keyword is required---!!!---}
   \Footername{Affiliation}
-  \Firstdate{\textit{Submitted:} \@Submitdate}
+  \Firstdate{\textit{Submitted:} 2018}
   \Seconddate{\textit{Accepted:} \@Acceptdate}
 \fi
 %% Sweave(-like)
