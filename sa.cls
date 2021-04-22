@@ -275,7 +275,11 @@
   \AtEndDocument{\makefooter}
 \fi
 %% required packages
-\RequirePackage{hyperref}
+%\RequirePackage{hyperref}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+
+%\PassOptionsToPackage{hyphens}{url}\RequirePackage{hyperref}
+
 %% new \maketitle
 \def\@myoddhead{
   {\color{white} SocArXiv}\\[-1.42cm]
