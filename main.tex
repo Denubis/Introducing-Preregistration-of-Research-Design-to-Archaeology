@@ -1,0 +1,750 @@
+\documentclass[article]{sa}
+
+\usepackage[utf8]{inputenc}
+
+\title{Introducing Preregistration of Research Design to Archaeology}
+\author{Shawn A. Ross\\Macquarie University \And Brian Ballsun-Stanton\\Macquarie University}
+\date{For publication in 2022}
+
+\Plainauthor{Shawn A. Ross, Brian Ballsun-Stanton}
+\Plaintitle{Introducing Preregistration of Research Design to Archaeology}
+
+
+\Abstract{
+Archaeology has an issue with "just-in-time" research, where
+insufficient attention is paid to articulating a research design before
+fieldwork begins. Data collection, management, and analysis approaches
+are under-planned and, often, evolve during fieldwork. While reducing
+the amount of preparation time for busy researchers, these tendencies
+reduce the reliability of research by exacerbating the effects of
+cognitive biases and perverse professional incentives. They cost time
+later through the accrual of technical debt. Worse, these practices
+hinder research transparency and scalability by undermining the quality,
+consistency, and compatibility of data. Archaeologists would benefit
+from embracing the "preregistration revolution" sweeping other
+disciplines. By publicly committing to research design and methodology
+ahead of time, researchers can produce more robust research, generate
+useful and reusable datasets, and reduce the time spent correcting
+problems with data. Preregistration can accommodate the diversity of
+archaeological research, including quantitative and qualitative
+approaches, hypothesis-testing and hypothesis-generating research
+paradigms, and place-specific and generalizing aims. It is appropriate
+regardless of the technical approach to data collection and analysis.
+More broadly, it encourages a more considered, thoughtful approach to
+research design. Preregistration templates for the social sciences can
+be adopted for use by archaeologists.}
+
+
+\Keywords{
+archaeology, preregistration, open data, research design, research transparency}
+\Plainkeywords{
+archaeology, preregistration, open data, research design, research transparency}
+
+\Journal{Preprint}
+\Volume{}
+\Issue{} %Enter as "(Issue)" for APA
+\Pages{} %Enter as "pp. m---n" for APA
+\Year{}
+\Submitdate{\today} %Enter date you submitted preprint for review
+\Acceptdate{2 April 2020} %Enter date your paper was accepted for publication
+\DOI{URL/DOI GOES HERE} %Enter final DOI here
+
+\Address{
+    Shawn A. Ross\\
+    Department of History and Archaeology, Faculty of Arts, Macquarie University\\
+    Sydney, Australia\\
+    E-mail: \email{shawn.ross@mq.edu.au}\\
+    URL: \url{http://orcid.org/0000-0002-6492-9025}\\
+    \\
+    Brian Ballsun Stanton\\
+    Faculty of Arts, Macquarie University\\
+    Sydney, Australia\\
+    E-mail: \email{brian.ballsun-stanton@mq.edu.au}\\
+    URL: \url{https://orcid.org/0000-0003-4932-7912}
+
+}
+
+\begin{document}
+
+
+
+\subsection*{Cite this Preprint}
+
+{\small
+\hangindent=0.5cm{}Ross, Shawn A., and Brian Ballsun-Stanton. Accepted 2 April 2020. ``Introducing Preregistration of Research Design to Archaeology.'' In \textit{Digital Heritage and Archaeology in Practice}, edited by Ethan Watrall and Lynne Goldstein. Gainesville, FL: University Press of Florida.
+
+ }
+
+
+\newpage
+
+Preregistration of research design, and in some cases hypotheses, has
+been promoted as a technique to combat researchers' biases, overcome
+perverse professional incentives, improve transparency, and increase
+rigor. The motivation stems from the "reproducibility crisis" faced by
+many disciplines (Nature 2016; Open Science Collaboration 2015; Adam
+2019; Kaplan and Irvin 2015; Franco et al. 2014; Mellor et al. 2016;
+Baker 2015; Munafò et al. 2017; National Academies of Sciences,
+Engineering, and Medicine et al. 2019). Preregistration can be described
+as the declaration of a research plan before data collection begins
+(Center for Open Science 2018), or a process in which researchers:
+"define the research questions and analysis plan before observing the
+research outcomes" (Nosek et al. 2018a). Although often associated with
+scientific research, many disciplines can benefit from preregistration.
+Preregistration accommodates inductive (hypothesis-generating;
+postdictive) as well as deductive (hypothesis testing; predictive)
+research, idiographic (distinct to a particular place) as well as
+nomothetic (applicable to a larger class of events of conditions)
+approaches, qualitative as well as quantitative analyses, and can be
+applied at various stages of the research lifecycle (Nosek et al.
+2018a). In archaeology and other field sciences, preregistration offers
+its usual benefits: explicit recognition of research design; management
+of biases and perverse incentives; and exposure of research methods and
+processes as required by emerging good practice in research transparency
+(Center for Open Science 2019).
+
+Preregistration could also counteract a sociotechnical problem hindering
+the adoption of digital field methods: a reluctance to invest time and
+resources in the early planning and preparation phases of a project,
+versus time later during fieldwork, post-processing, and analysis
+(Sobotkova et al. 2016). This lack of planning leads to changes in
+research design during execution with little accountability, including
+for example, ongoing modification of data structures and data capture
+workflows during fieldwork (Borgman 2015). Such in-progress changes
+raise the cost and complexity of digital field data collection systems.
+\emph{Ad hoc} changes limit data quality by precluding adequate testing
+and refinement, undermining consistency of data and methods, and
+imposing "technical debt" such as extensive cleaning and reconciliation
+of data at the end of the project. These "easy" changes during and after
+fieldwork thereby hinder the interoperability and reusability of
+resulting datasets.
+
+This chapter will explore how preregistration can benefit domains like
+archaeology that involve approaches spanning the humanities and the
+sciences, with both deductive and inductive elements. We discuss the
+benefits of preregistration for archaeological research, argue that
+preregistration is feasible for archaeologists, and propose how
+preregistration might be implemented based on a model from qualitative
+research in the social sciences.
+
+\section{Preregistration Accommodates
+Predictive and Postdictive Approaches}
+
+Preregistration has been promoted as a way to improve confidence in the
+results of research, especially by clarifying whether research generates
+new hypotheses from existing data, or tests existing hypotheses using
+new data. Maintaining this distinction combats researchers' cognitive
+biases, ensures that research adheres to assumptions intrinsic to common
+statistical approaches, and counteracts the distortions introduced by
+perverse professional incentives that encourage questionable research
+practices. For example, we can see a "publication bias" towards papers
+that confirm, rather than refute, initial hypotheses in deductive
+research (Chase 2013; Fraser et al. 2018). Although preregistration is
+often associated with scientific and biomedical research
+(\url{https://clinicaltrials.gov/} is the largest existing registry), it
+is also used in social sciences like economics and political science
+(see https://www.socialscienceregistry.org/;
+http://egap.org/content/registration/; cf. Nosek et al. 2018a; Haven and
+Van Grootel 2019).
+
+Preregistration emerged as a new methodological commitment in
+disciplines like psychology and biomedicine that have struggled to
+replicate or reproduce results. The problems it addresses, however,
+exist in many domains. Nosek, for example, emphasizes researchers'
+tendency to conflate "prediction" and "postdiction". Prediction
+describes a deductive, hypothesis-testing approach since the hypothesis
+predicts outcomes of empirical research. Postdiction describes an
+inductive, hypothesis-generating approach since the hypothesis arises
+from (and after) empirical research (Nosek et al. 2018a; Haven and Van
+Grootel 2019). Predictive research provides a rigorous way to test and
+disprove hypotheses. Such testing is a boon for positivists, who remind
+us that Popper's injunction that "proof" of a hypothesis is always
+provisional while disproof is final, making falsifiability the hallmark
+of science (Derksen 2019). Postdictive research, conversely, can
+generate surprising or unexpected hypotheses that radically shift our
+understanding of the world or even change scientific worldviews (Kuhn
+1970:23).
+
+Both predictive and postdictive approaches are essential, but they must
+not be conflated. Therefore, even if a researcher does not hold with
+positivist Popperian falsification as the primary mechanism for
+scientific discovery (Huemer 2020), formalisms like preregistration that
+enforce distinctions between prediction and postdiction improve the
+quality of research:
+
+\begin{quote}
+
+"Failing to appreciate the difference can lead to overconfidence in
+\emph{post hoc} explanations (postdictions) and inflate the likelihood
+of believing that there is evidence for a finding when there is not.
+Presenting postdictions as predictions can increase the attractiveness
+and publishability of findings by falsely reducing uncertainty" (Nosek
+et al. 2018a).
+
+\end{quote}
+
+If postdiction is conflated with prediction, it is prone to "fallibility
+of memory, motivated reasoning, and cognitive biases" (Nosek et al.
+2018a). Of particular concern is hindsight bias, where researchers
+(often subconsciously) remember or seek evidence supporting their
+conclusions while ignoring or faulting contrary evidence. Since common
+statistical methods like null hypothesis significance testing, moreover,
+assume prediction rather than postdiction, they are likely to produce
+"Type 1 errors" (false positives) when researchers neglect the
+difference. As a result of these problems, "Mistaking postdiction as
+prediction underestimates the uncertainty of outcomes and can produce
+psychological overconfidence in the resulting findings" (Nosek et al.
+2018a). Although postdictive research can produce new inconvenient facts
+that contradict received paradigms, it should not simultaneously test
+the hypotheses it generates.
+
+Indeed, "using current results to construct \emph{post hoc} hypotheses
+that are then reported as if they were \emph{a priori} hypotheses",
+"failing to report \emph{a priori} hypotheses that are unsupported by
+the current results" \href{https://paperpile.com/c/9nVMK6/Og0rj}{(Rubin
+2017)}, or "presenting exploratory work as though it was confirmatory
+hypothesis testing" \href{https://paperpile.com/c/9nVMK6/eWauu}{(Fraser
+et al. 2018)}, is considered "hypothesizing after the results are known"
+or HARKing (Kerr 1998). HARKing is always a questionable research
+practice if it is unreported, although disagreement exists about the
+acceptability (or even desirability) of careful and transparent
+\emph{post hoc} analysis in deductive research (Rubin 2017; Hollenbeck
+and Wright 2017). In a 2018 paper surveying over eight hundred
+ecologists and evolutionary biologists, 51\% admitted to HARKing (Fraser
+et al. 2018). Fraser also notes in passing that when published papers
+fail to disclose \emph{a priori} hypotheses (or if there were \emph{a
+priori} hypotheses), it becomes difficult to judge whether HARKing --
+or the conflation of postdiction and prediction more broadly -- has
+even taken place. As such, the \emph{a priori} articulation of
+hypotheses required by preregistration (or the explicit statement that
+research is inductive) can help to combat this species of questionable
+research practice.
+
+\section{The Problem of "Just-in-Time"
+Archaeology}
+
+The biases and perverse incentives that preregistration was designed to
+combat in other disciplines also exist in archaeology. Processual
+archaeology's "scientific approach", with its emphasis on revealing aims
+and biases and its problem-orientation, has recognized these problems
+for half a century (e.g. Johnson 2010:24--25). Indeed, the relevance of
+early processual thought to the current problem is striking. In the
+1970s, Hole criticized archaeologists' tendency to focus on fieldwork
+and analytical methods rather than research design, especially the
+development of hypotheses or models. He called for more "thought" before
+the archaeologist turned to "methodological manipulations" (Hole
+1973:32). In the same proceedings, French observed that:
+
+\begin{quote}
+    
+"{[}I{]}t is essential and (?) obligatory to define the problems before
+developing or choosing the means used to collect the data necessary to
+examine these problems and the hypotheses explicit in them. In other
+words, the questions asked dictate the methods of recovery; one selects
+the recovery technique to suit the problem in hand" (French 1973:105).
+
+\end{quote}
+
+French went on to emphasize the importance of what would now be termed
+data provenance. Data provenance documents where material was found or
+observations made, by what method, under what conditions, and with what
+sampling approach. He further recommended that archaeologists specify
+the program and standards governing data collection. Only by doing so
+can the quantity, quality, and comparability of archaeological data be
+assessed. The situation French described -- a lack of shared (or at
+least articulated) standards of data acquisition and documentation --
+remains widespread today, undermining the comparability of data from
+different projects (French 1973:106; Atici et al. 2013; Faniel et al.
+2013; Holub et al. 2018). Influential recoomendations, such as those
+encapsulated by Findable, Accessible, Interoperable, and Reusable (FAIR)
+data and the Transparency and Openness Promotion (TOP) Guidelines
+likewise emphasize the creation of proper metadata -- the
+documentation of data such that it can be understood and reused by
+outsiders (Wilkinson et al. 2016; Center for Open Science 2019). In
+short, merely collecting more data does not automatically support the
+syntheses needed to produce a better understanding of the past, and
+data-recovery techniques must harmonize with theoretical approaches
+(e.g. Johnson 2010:24--25; French 1973:107). Preregistration encourages
+the planning and preparation necessary to collect data appropriate to a
+project's aims now and useful to others in the future.
+
+Preregistration can, moreover, help researchers articulate their
+specific theoretical approach and research tradition. Processualism and
+post-processualism both have fundamental assumptions about the nature of
+evidence, approaches to knowledge, and the interpretation of data. They
+are examples of competing Lakatosian research programs, each with their
+own "hard-core" of truths which they take to be self-evident and "soft
+outer shell" of current, unproven, research questions (Lakatos 1978).
+Preregistration makes such researcher assumptions more explicit (Johnson
+2010:3).
+
+Preregistration also mitigates a specific sociotechnical barrier to the
+adoption of digital approaches in archaeology. Archaeologists tend to
+substitute remedial work at the end of a project for proper planning and
+preparation at the beginning (Sobotkova et al. 2016). This tendency,
+along with the continuing prevalence of print publication of datasets
+like artifact catalogs, impedes the production of comprehensive,
+reusable datasets in archaeology. It also undermines the cultivation of
+deeper digital practice more generally.
+
+This sociotechnical barrier to innovation in the discipline warrants
+further discussion. Our information infrastructure work, related to the
+Field Acquired Information Management Systems (FAIMS) project, has
+customized field data collection systems for over sixty workflows at
+more than forty projects in archaeology, ecology, geoscience, history,
+and other disciplines since 2014 (Ross et al. 2013, 2015; Sobotkova et
+al. 2015, 2016; Ballsun-Stanton et al. 2018; VanValkenburgh et al.
+2018). We have found that field researchers broadly, and archaeologists
+particularly, under-invest in planning and preparation in three ways.
+
+First, archaeologists tolerate a lack of detail or precision in their
+documentation. For example, they do not take the time to build and
+deploy controlled vocabularies or they leave important and recurring
+information for "notes" or other free-text fields. When applied to
+paper-based recording, these practices exploit the forgiving nature of
+the medium, relying on the ability to write "in the margins" or "on the
+back of the page". In digital recording, these tendencies often
+translate into poorly designed and unvalidated spreadsheets or
+databases. This haste and imprecision reduces the up-front investment in
+data and workflow modeling for harried academics and consultants but
+adds an implicit cost: a much larger burden of post-fieldwork data
+cleaning.
+
+Second, forms and protocols assume a great deal of implicit knowledge
+transmitted orally, often informally, at the project. This practice
+reduces the transparency of fieldwork and fails to record important
+metadata needed later for data reuse. Implicit methods and metadata are
+lost by team members, volunteers, and students who forget just how
+things were done, are uncontactable, or who have moved onto other
+projects. This epistemic turnover impedes later understanding and reuse
+by outsiders -- or even project participants -- who cannot retrieve lost
+context.
+
+Third, project leaders tend to develop record-keeping or documentation
+practices like forms and protocols late, shortly before fieldwork
+begins, leaving insufficient time to test and refine them with realistic
+trial data. This practice exacerbates the effects of the first two
+problems, producing records that only approximate the documentation that
+researchers desire. It also contributes to a feature common to many
+fieldwork-based domains, a tendency for research design to be "emergent"
+-- for researchers to elaborate and modify approaches, methods, tools,
+technologies, and practices during fieldwork when working with real data
+(Borgman 2015:106--107). Although a certain amount of ``tinkering''
+(c.f. Sobotkova and Janouchova 2021, Chapter 6 this volume) may be
+necessary to mitigate the unpredictability of fieldwork, the practice
+produces datasets that are not even consistent or comparable across a
+single season at a single project without considerable manual
+reconciliation, let alone more broadly.
+
+Together, these practices constitute a sociotechnical hurdle to
+effective digital archaeology: underinvestment in the early stages of a
+project and subsequent accrual of technical debt, requiring the
+expenditure of much more time and effort to "fix" data at the end of a
+project (Sobotkova et al. 2016). This misallocation of time extends to
+-- and is exacerbated by -- an under-allocation of research funds to
+data management (Mons 2020). In data quality and reusability, as much as
+in analytical reproducibility, such ``bolt-on'' fixes applied at the end
+of a project are much more costly than ``built-in'' good
+practice, if they are feasible at all (Marwick 2017b). Perhaps of
+greatest concern, late data cleaning is often "lossy", irreversibly
+reducing the quality and utility of a project's data, a serious
+consideration due to the unrepeatable nature of most archaeological
+research.
+
+Addressing this sociotechnical problem by improving research design,
+data production, and the relationship between them is crucial. The
+necessity of producing quality, consistent, reusable data is now
+recognized in archaeology and beyond. Data is becoming a first-class
+output and a key element of academic rigor. Publication of analytical
+code is likely to follow. Pressure is growing to improve the
+transparency of research by, for example, making data and other digital
+research objects FAIR (Wilkinson et al. 2016; GO-FAIR 2017; Stall et al.
+2019). That pressure includes requirements established by journals,
+funders, and regulators, as well as broader pressure to implement better
+practice in research. For example, sharing of FAIR data has been written
+into the (Australian) National Statement on Ethical Conduct in Human
+Research and the Australian Research Council's Open Access Policy, both
+promulgated by the National Health and Medical Research Council (2018,
+2019). Publishers representing over a thousand journals and many private
+funders have endorsed the TOP Guidelines (Mellor et al. 2016; Center for
+Open Science 2019). Meeting such requirements will require a greater
+investment, both in time and resources, from researchers in early
+planning and preparation. In the future, stakeholders will expect
+archaeologists' data and code, not just our results and conclusions. At
+present, however, data repositories are underpopulated and datasets are
+not routinely reused (McNutt et al. 2016; Sobotkova 2018). This
+underpopulation inhibits reproduction or verification of results,
+independent analyses of primary data, and the application of new
+techniques to old datasets. It also prevents the combination of datasets
+from multiple studies for large-scale research to address "grand
+challenges" (Snow et al. 2006; Kintigh 2006; Kintigh et al. 2014; McNutt
+et al. 2016).
+
+\section{Preregistration is Suitable for
+Archaeology}
+
+Preregistration can help resist the temptation of "just-in-time"
+research design. It would make "built-in'' good practice more likely, as
+opposed to more common attempts to "bolt-on" fixes after fieldwork
+(Marwick 2017b:441). Specifically, preregistration offers a mechanism to
+make approaches and assumptions explicit, allowing them to be
+scrutinized (Johnson 2010:3) and counteracting cognitive biases.
+Preregistration also helps researchers overcome the sociotechnical
+tendency to underinvest in preparation for data acquisition and
+analysis, instead of relying on remediation of problems late in the
+research lifecycle. Combined with a commitment to other aspects of
+reproducibility (Perkel 2018; Marwick 2017b; Wilkinson et al. 2016),
+preregistration holds the potential to improve research practice
+tangibly in our discipline.
+
+Preregistration can, moreover, accommodate the diversity and
+transdisciplinarity of archaeological research. Archaeology can be
+deductive and predictive or inductive and postdictive. Most often,
+archaeology -- like other fieldwork disciplines -- might best be
+described as abductive (Tavory and Timmermans 2014). Abductive research
+represents a synthesis of deductive and inductive approaches, gathering
+data according to a specific and intentional methodology (the inductive
+element), and then applying a theory or framework that describes those
+facts (deductive). Used in interpretive social science research, this
+methodology is seldom explicitly acknowledged or described (Lewis-Beck
+et al. 2003:1). Archaeology can also be quantitative and statistical or
+qualitative and descriptive. It can be idiographic, seek an in-depth
+understanding of the specific, contingent, and unique in a particular
+place and time. Or, it can be nomothetic, attempting to derive or test
+general (if provisional or incomplete) principles or rules by looking at
+similarities across space and time. Idiographic research is often
+associated with inductive and qualitative approaches in the humanities.
+Nomothetic research is usually associated with deductive and
+quantitative approaches in the social and natural sciences. These
+approaches, however, can cut across disciplines and can be combined,
+iterated, or synthesized in various ways (Watson 1973:51). A
+preregistration regime does not privilege any of these approaches over
+another but instead demands an articulation of, and a public commitment
+to, a specific research design at the beginning of a project,
+\emph{before} research begins. Indeed, the very complexity and diversity
+of archaeology -- spanning disciplines and approaches to knowledge
+-- makes articulation of research design particularly important. An
+explicit research design documented in detail before research starts,
+rather than during the writing-up stage, avoids the unintentional
+conflation or elision of approaches that could undermine research
+results.
+
+Archaeology is also serendipitous. Often, we do not know what we will
+find until we get to the field. This problem, however, is not unique to
+archaeology. Even in deductive disciplines, results are not and should
+not be under the control of the researcher
+\href{https://paperpile.com/c/9nVMK6/0AqDV}{(Chambers 2019)}. Research
+design, research questions or hypotheses, methods, and interpretive
+frameworks, however, are under researcher control. As a result, these
+elements can be articulated beforehand. Training, prior fieldwork,
+knowledge of analogous sites or landscapes, regulator or funder
+requirements, and disciplinary expectations around fieldwork and
+publication all inform research. These prior requirements and
+similarities allow archaeologists to state \emph{why} and \emph{how}
+they plan to undertake research, if not \emph{what} they will find.
+Preregistration forces a level of clarity and formalizes an \emph{a
+priori} commitment to research design and recording strategy. Indeed,
+since expected outcomes of research vary, and are often externally
+dictated (e.g., by heritage legislation), the articulation of research
+design is a particular benefit to archaeologists since it moves
+preparation to the less-fraught time before fieldwork begins. This
+preparatory work allows thoughtful development, testing, and revision of
+approaches, increasing the chances that the research design and
+collected data will support the desired outcomes. Finally, we recognize
+that exigencies of fieldwork may suggest a "pivot" due to an
+extraordinary find or the late discovery of unsuitability in approach or
+documentation during execution. Preparing for the unexpected again
+argues for careful \emph{a priori} research design (e.g., consideration
+of abductive elements within deductive research), while the planning
+encouraged by preregistration should help to avoid errors in design
+(especially if combined with pilot research). Considering its potential
+value, the unpredictable nature of fieldwork should not preclude a
+"best-effort" at preregistration -- and a ``best-effort'' in an
+abductive discipline like archaeology should be considered sufficient.
+
+\section{Introducing Preregistration to
+Archaeological Practice}
+
+Despite its potential utility, we could find no examples of rigorous
+preregistration in archaeology. A search of OSF's 304,904 registrations
+(as of March 19, 2020) produced only four non-teaching-related hits for
+"archaeology"
+(\href{https://osf.io/registries/discover?provider=OSF\&q=archaeology}{{https://osf.io/registries/discover?provider=OSF\&q=archaeology}}).
+The OSF differentiates between categories of registration. The authors
+of the four preregistrations, Marwick (2017a, 2017c), Selden (2016), and
+Schmid (2019) used the "Open-Ended Registration" method to submit data
+and code in support of papers they had written. While the submission of
+code in support of scientific papers is laudable, these FAIR data
+"registrations", which support replication of computational results, do
+not represent the preregistration of approaches and methods we suggest.
+
+Selden's pottery laser-scanning project (2017), for example, would be a
+good candidate for the preregistration of an inductive, postdictive
+project. A more complete preregistration effort, in this case, could
+include a protocol for the laser-scanning methodology and, crucially, a
+protocol for the creation and publication of metadata. Spot checks
+indicate that data documentation is incomplete; metadata like intra-site
+find location and artifact type do not accompany some scans (e. g.
+\href{https://zenodo.org/search?page=1\&size=20\&q=41NA49}{{https://zenodo.org/search?q=41NA49}}).
+
+Likewise, Marwick et al.'s lithic trampling experiment (2017a)
+represents an opportunity for the preregistration of more deductive,
+predictive research. This study explored, "claims of vertical movement
+of artifacts in debates surrounding the timing of the first human
+occupation," creating a physical experiment on the soil heaps of
+Madjedbebe (Marwick 2017a). Preregistration could articulate hypotheses,
+methodology, and an analytical approach. Perhaps, this preregistration
+could even include early versions of code. With moderate effort,
+especially if a grant application exists for this research, it could be
+elaborated to a full preregistration plan, or even a "registered
+report", in which a journal accepts or rejects the paper on the strength
+of its hypothesis, methodology, and proposed analysis before results are
+known (see Chambers 2019).
+
+We note that Selden's presentation of the laser scan data with licensing
+information exceeds standard practice in archaeology, complements the
+associated paper (2017), and should be commended. Likewise, Marwick's
+publication of containerized code is exceptional, confirming his status
+as a leader in computational reproducibility. Rather, these examples
+highlight that (1) even archaeologists committed to transparency and
+reproducibility have not adopted comprehensive preregistration of
+approach, method, and data management, and (2) undertaking
+preregistration would reinforce other efforts to improve transparency
+and reproducibility, like FAIR datasets and publication of analytical
+code.
+
+Templates, examples, and models could facilitate the introduction of
+preregistration into archaeology. Although a protocol for archaeological
+preregistration is beyond the scope of this chapter, and good practice
+around the execution of preregistration is still evolving (c.f. Nosek et
+al. 2018a; Ledgerwood 2018; Nosek et al. 2018b), we can offer some
+guidelines based on practices in other disciplines.
+
+A distinction is sometimes made between preregistration of research
+questions or hypotheses on the one hand, and plans for analysis on the
+other:
+
+\begin{quote}
+    
+
+
+"{[}P{]}reregistration of theoretical predictions helps researchers know
+how to correctly calibrate their confidence that a study tests (versus
+informs) a theory, whereas preregistration of analysis plans helps
+researchers know how to correctly calibrate their confidence that a
+specific finding is unlikely to be due to chance." (Ledgerwood 2018)
+
+\end{quote}
+
+In the case of archaeology, experience with the FAIMS Project indicates
+that two additional aspects of archaeological research might also be
+registered profitably: data models and data workflows including data
+capture, manipulation, and analysis. Recording these aspects of research
+will help archaeologists meet emerging standards such as the TOP Level 2
+Guidelines, which require "a full account of the procedures used to
+collect, preprocess, clean, or generate the data" (data provenance) and
+a "description of procedures" necessary for an "independent replication
+of the research" (Center for Open Science 2019). Thereby acknowledging
+that the abductive and serendipitous nature of the discipline may often
+make transparency the goal of preregistration, rather than replication.
+As noted above, the perfect should not be made the enemy of the good,
+and a best-effort attempt at preregistration would mark an improvement
+over the present lack of any at all.
+
+Preregistration in archaeology could therefore include declarations of
+research tradition (e.g., theoretical framework), approach (e.g.,
+inductive, deductive, idiographic, nomothetic, etc.), hypotheses or
+research questions, fieldwork and analysis plans, workflows, and/or data
+models. Compared to the current state of affairs, articulation of any
+aspect of research design would mark an improvement. An explicit
+commitment to a particular approach plus either hypotheses or research
+questions would do the most to combat researcher biases. Articulation of
+data models and workflows would do the most to overcome "just-in-time"
+fieldwork and produce reusable, widely comparable data at the end of the
+project.
+
+In choosing a preregistration protocol, archaeologists will face a
+trade-off between the amount of time spent defining their approach and
+the resulting loss of flexibility. A ``stricter'' preregistration will
+maximize the benefits of preregistration, whereas a "looser"
+preregistration is faster and less constraining -- but also less
+effective at avoiding bias or ``just-in-time'' fieldwork.
+
+A preregistration regime in archaeology could be built using existing
+knowledge infrastructures, like the Open Science Framework (Open Science
+Framework 2020; Bowman 2019). OSF provides a range of preregistration
+templates that could be adapted for archaeological use (Mellor and
+DeHaven 2016), including templates for ``qualitative research'' that
+accommodate the nature of archaeology as an abductive discipline while
+``providing a check on subjectivity'' (Haven and Van Grootel 2019).
+
+Archaeology would benefit from the development of domain-specific
+registration templates, such as that for Social Psychology (van 't Veer
+and Giner-Sorolla 2016), or perhaps for specific types of research, on
+the model of the "replication recipe" for conducting replication
+experiments in various disciplines (Brandt et al. 2014). We hope that
+the current chapter can inform the development of such templates,
+perhaps in consultation with the proprietors of archaeological data
+repositories like Open Context (see Kansa and Kansa 2010; Kansa and
+Bissell 2010), tDAR (McManamon and Kintigh 2016; McManamon et al. 2017),
+and the Archaeology Data Service, whose data dissemination and reuse
+expertise complements the field data management experience of the FAIMS
+Project.
+
+Until archaeology-specific templates and protocols exist, we recommend
+starting with the OSF ``Qualitative Research Preregistration'' template
+(\href{https://osf.io/6z2hr/}{{https://osf.io/6z2hr/}}; see Haven and
+Van Grootel 2019). It is intended for a range of social science
+research;not all fields are relevant to archaeology, and some
+archaeology-specific fields will probably need to be added. In our view,
+key fields from this template that are relevant to archaeology include:
+
+\begin{itemize}
+\item  All "Study information" items (points 1-5), which provide basic
+  project metadata and commitment to particular research questions
+  should be included. "Typical moments" of research-question
+  modification represents a useful concept that accommodates the
+  emergent and serendipitous nature of archaeological research. As noted
+  at 5.1, inductive vs. deductive should be indicated, and we would
+  suggest adding idiographic vs. nomothetic. Projects with more of a
+  deductive element should include any hypotheses that will be tested
+  (5.2). Further information, such as the extent and nature of
+  qualitative vs. quantitative analysis might also be useful. The "Use
+  of Theory" section could likely be simplified and made more
+  archaeology-specific.
+\item   "Tradition" (Point 6) might be combined into the prior "Use of Theory"
+  section, especially 5.3. This condensed section could include, the
+  specific paradigm of fact-generation: "processualist,"
+  "post-processualist," "structuralist," "marxist," "cognitive
+  archaeology," etc. (examples from Johnson 2010), The articulation of
+  the paradigm used to generate facts may serve to contextualize the
+  details of design, sampling, and analysis below.
+ \item  Regarding ``Design Plan'' (points 7-8), "Study Type" should be
+  specified as ``excavation,'' ``surface survey'', ``artifact
+  analysis'', ``geoarchaeology'', etc., while ``Study Design'' is
+  required for most grant or permit applications and could be generated
+  from those sources. It would be useful to develop an
+  archaeology-specific enumerated list of study types, and perhaps also
+  of design elements linked to common approaches, rather than relying
+  exclusively on a narrative study design.
+ 
+\item   Under ``Sampling Plan'' (points 9-17), existing vs. non-existing data
+  (and "Explanation of Existing Data" if relevant), ``Data Collection
+  Procedures'' (adjusted for archaeology), ``Type of Data Collected'',
+  ``Sort of Sample'', and ``Data Collection Plan'' should be specified.
+  ``Type of Sampling Rational'' may be useful for quantitative or
+  geospatial research. These categories might be modified or extended to
+  ensure that the data model and data capture workflow are defined.
+
+\item   "Script" (point 18) should read ``Forms'' (whether paper or digital)
+  since it indicates ``Data Collection instruments''. Note again that
+  modification during research is accommodated.
+
+\item  An "Analysis Plan" (point 19) should be articulated, but with the
+  categories at 19.1 amended to reflect archaeological practice.
+  Important information might include the balance between quantitative
+  and qualitative analysis, and/or a statement of the approach used for
+  either type (e.g., the statistical approaches, application
+  middle-range theory, etc.). It might also be useful to break the
+  analytical procedures or workflow out from the descriptive section
+  (19.2.1) into its own enumerated list.
+  
+\item "Other" (point 20) provides a space for additional information that
+  will help others to understand and reuse your research.
+ 
+\end{itemize}
+
+Beginning with a broad, existing template such as this one allows
+experimentation that, over time, can produce preregistration protocols
+that reflect and respect archaeological practice.
+
+\section{Preregistration as "Slow
+Archaeology"}
+
+The discipline of oceanography has also grappled with "small data"
+problems (Borgman 2015; Kansa and Bissell 2010), including diverse data
+and data structures that emerge from fieldwork, producing internally
+inconsistent datasets and mid-course changes to research. These problems
+include those that shade into questionable research practices, judging
+from Fraser et al.'s (Fraser et al. 2018) survey of related disciplines.
+As in archaeology, these problems inhibited the large-scale, synthetic
+research needed to address grand challenges in oceanography. In the
+course of aggregating and synthesizing data from many sources, the Ocean
+Health Index project discovered that:
+
+\begin{quote}
+
+"Environmental scientists are expected to work effectively with
+ever-increasing quantities of highly heterogeneous data even though they
+are seldom formally trained to do so... Without training, scientists
+tend to develop their own bespoke workarounds to keep pace, but with
+this comes wasted time struggling to create their own conventions for
+managing, wrangling and versioning data. If done haphazardly or without
+a clear protocol, these efforts are likely to result in work that is not
+reproducible - by the scientist's own "future self" or by anyone else."
+(Lowndes et al. 2017).
+
+\end{quote}
+
+The Ocean Health Index project's response to scalability and
+reproducibility was to implement data collection, manipulation, and
+analysis techniques based on open data formats, data standardization,
+and script-based analysis. Then, they created libraries of scripts that
+could perform commonly required analyses on well-structured data\emph{.}
+The resulting data and associated analytical scripts could be shared,
+aggregated, and reused by researchers around the world. Increases in the
+quantity of available data and improving data quality were functions of
+reducing friction, avoiding technical debt, and implementing
+requirements around data formats, data structures, and analytical
+methods. More important than the generation of standardized, reusable
+data and scripts, however, was the thoughtful and planned research
+design, including its approach to creating, recording, and analyzing
+data.
+
+Such careful planning not only aligns with the early processualists'
+call for more emphasis on thoughtful, \emph{a priori} research design,
+but also with Caraher's recent argument for a "slow archaeology":
+
+\begin{quote}
+    
+"Slow archaeology evokes the practice of archaeology as a craft. It
+prioritizes an embodied attentiveness to the entire process of fieldwork
+as a challenge to the fragmented perspectives offered by workflows
+influenced by our own efficient, industrialized age" (2015).
+
+\end{quote}
+
+Preregistration and associated digital approaches that support
+transparency and reproducibility are not antithetical to slow
+archaeology -- the chaos of "just-in-time" approaches to fieldwork
+are. Under-planned fieldwork might offer more freedom (and delay the day
+of reckoning with messy data), but it represents the opposite of the
+considered approach suggested by Caraher and is likely to result in
+biased and opaque research that does not reach its full potential.
+Preregistration encourages thoughtfulness.
+
+\section{Conclusions}
+
+Calls for archaeologists to improve data quality for large-scale
+research have been made for at least the past two decades (Doerr et al.
+2004; Kansa and Kansa 2011; Faniel et al. 2013; Austin 2014), but
+limited progress has been made (Kintigh et al. 2014; Sobotkova 2018).
+Concerns over the transparency and reproducibility of archaeological
+research are more recent (Marwick 2017b), but archaeology is unlikely to
+avoid the reproducibility crisis so profoundly affecting other
+disciplines. Our recommendation to adopt preregistration as a means of
+increasing rigor is a pathway to solving those challenges.
+Preregistration promotes "built-in" rather than "bolt-on" good practice
+in research design, data management, and analysis. It likewise fosters
+thoughtful, "slow" archaeology rather than "just-in-time" archaeology.
+Robust, scalable, transparent, and reproducible results, underlying
+persuasive research directed at grand challenges, require planning and
+forethought. Making a public commitment to research design \emph{via}
+preregistration, before setting out for the field, provides a mechanism
+that makes space for the necessary time and thought.
+
+%\section{References}
+\nocite{*}
+\bibliography{references}
+
+\end{document}
